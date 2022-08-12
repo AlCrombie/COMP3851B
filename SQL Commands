@@ -1,0 +1,31 @@
+CREATE TABLE campus (
+  campusID INT(3) NOT NULL PRIMARY KEY,
+  campusAddress VARCHAR(25) NOT NULL,
+  campusInfo TEXT NOT NULL
+);
+
+CREATE TABLE courses (
+  courseID INT(8) NOT NULL PRIMARY KEY,
+  discipline VARCHAR(20) NOT NULL,
+  degree VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE faculty (
+  staffID INT(8) NOT NULL PRIMARY KEY,
+  firstName VARCHAR(10) NOT NULL,
+  lastName VARCHAR(10) NOT NULL,
+  position VARCHAR(15) NOT NULL,
+  discipline VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE faq (
+  FAQID INT(4) NOT NULL PRIMARY KEY,
+  question TEXT,
+  answer TEXT,\
+);
+
+CREATE TABLE testimonials (
+  testID INT(3) NOT NULL PRIMARY KEY,
+  name VARCHAR(25) NOT NULL,
+  content TEXT NOT NULL
+);
