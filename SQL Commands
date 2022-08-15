@@ -21,11 +21,17 @@ CREATE TABLE faculty (
 CREATE TABLE faq (
   FAQID INT(4) NOT NULL PRIMARY KEY,
   question TEXT,
-  answer TEXT,\
+  answer TEXT
 );
 
 CREATE TABLE testimonials (
   testID INT(3) NOT NULL PRIMARY KEY,
   name VARCHAR(25) NOT NULL,
   content TEXT NOT NULL
+);
+
+CREATE TABLE users (
+  usersID INT(3) NOT NULL PRIMARY KEY,
+  userName VARCHAR(20) NOT NULL,
+  userPass VARCHAR(20) NOT NULL
 );
