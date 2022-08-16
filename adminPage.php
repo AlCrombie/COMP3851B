@@ -12,7 +12,8 @@ session_start();
 
 <body>
 Enter Admin
-<h3>Welcome <?php echo $_SESSION['userName']; ?></h3>
+<h3>Welcome Admin</h3>
+<h4>Click here to <a href = "logout.php">Logout</a></h4>
 </body>
 
 </html>
